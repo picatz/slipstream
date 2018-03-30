@@ -13,9 +13,6 @@ require 'slipstream'
 # create a new stream
 stream = Slipstream.create
 
-# if blocking, nothing will be read or printed
-print stream.read 
-
 # fork'd processes can observe the stream
 child = fork do 
   loop do
